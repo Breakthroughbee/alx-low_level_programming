@@ -1,0 +1,17 @@
+#include <stdio.h>
+/**
+  * main - for loop base ten in printf
+  * Description - 'single digit numbers of base 10'
+  * Return: always 0 (success)
+  */
+int main(void)
+{
+	int n;
+
+	for (n = 0; n <= 9; n++)
+	{
+		printf("%d", n);
+	}
+	printf("\n");
+	return (0);
+}
