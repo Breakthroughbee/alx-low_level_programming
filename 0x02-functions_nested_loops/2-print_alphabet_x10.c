@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 	while (k < 10)
 	{
 		ch = 'a';
-		while (ch <= 'b')
+		while (ch <= 'z')
 		{
 			_putchar(ch);
 			ch++;
