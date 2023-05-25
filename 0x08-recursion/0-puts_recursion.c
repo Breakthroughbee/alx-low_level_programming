@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
-  * _puts_recursion - main entry point of print file with puts
+  * _puts_recursion - recursion entry point
   *
-  * @s: Character recursion
+  * @s: character string
   *
-  * Return: 0
+  * Return: 0 (success)
   */
 
 void _puts_recursion(char *s)
 {
-	putchar(*s);
-	_puts_recursion(s + 1);
-
 	if (*s == '\0')
 	{
 		putchar('\n');
+		return;
 	}
+
+
+	putchar(*s);
+	_puts_recursion(s + 1);
 }
