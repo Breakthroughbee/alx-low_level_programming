@@ -3,6 +3,16 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/**
+  * main - adds positive integers
+  *
+  * @argc: integer
+  *
+  * @argv: array pointer
+  *
+  * Return: zero if null, 1 if not digit
+  */
+
 int main(int argc, char *argv[])
 {
 	int b = 0, a = 0;
