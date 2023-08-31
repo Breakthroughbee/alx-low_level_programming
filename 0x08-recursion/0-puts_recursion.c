@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-  * _puts_recursion - recursion entry point
-  *
-  * @s: character string
-  *
-  * Return: 0 (success)
-  */
+ * _puts_recursion - recursion entry point
+ *
+ * @s: string
+ *
+ * Return: 0 (success)
+ */
 
 void _puts_recursion(char *s)
 {
