@@ -10,29 +10,27 @@
  * Return: NULL
  */
 
+
 char *create_array(unsigned int size, char c)
 {
+	unsigned int a;
 	char *some_array;
-	unsigned int i;
 
 	if (size == 0)
 	{
 		return (NULL);
 	}
-	
+
 	some_array = (char *)malloc(size * sizeof(char));
 
 	if (some_array == NULL)
 	{
 		return (NULL);
 	}
-
-
-	for (i = 0; i < size; i++)
+	for (a = 0; a < size; a++)
 	{
-		some_array[i] = c;
+		some_array[a] = c;
 	}
-
 
 	return (some_array);
 }
