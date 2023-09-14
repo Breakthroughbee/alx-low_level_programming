@@ -19,6 +19,7 @@ void print_name_as_is(char *name)
  *
  * Return: Nothing
  */
+
 void print_name_uppercase(char *name)
 {
 	unsigned int i;
@@ -52,4 +53,3 @@ int main(void)
 	printf("\n");
 	return (0);
 }
-
