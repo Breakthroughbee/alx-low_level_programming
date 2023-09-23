@@ -21,9 +21,6 @@ size_t print_list(const list_t *h)
 			printf("s\n", initial->s);
 		else
 			printf("[0] (nil\n");
-		if (initial->s != NULL)
-			printf("%s\n", initial->s);
-
 		counted++;
 		initial = initial->next;
 	}
