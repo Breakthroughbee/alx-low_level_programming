@@ -1,17 +1,18 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdef.h>
 
 /**
  * print_list - prints lists
- * @i: header
+ * @h: header
  *
  * Return: counted of node
  */
 
-size_t print_list(const list_t *i)
+size_t print_list(const list_t *h)
 {
-	const list_t *initial = i;
+	const list_t *initial = h;
 	size_t counted = 0;
 
 	while (initial != NULL)
