@@ -1,7 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdef.h>
 
 /**
  * print_list - prints lists
