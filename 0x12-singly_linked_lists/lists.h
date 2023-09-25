@@ -1,27 +1,27 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stddef.h>
+
 /**
- * struct node - list
- * @s: stinrg
- * @next: next
- * @length: lenght of string
- * 
- * Description: Singly linked lists
+ * struct nodes - linked list
+ * @string: string
+ * @length: lenght
+ * @next: next node
+ *
+ * Description: singly linked list
  */
 
-typdef struct node
+typedef struct nodes
 {
-	char *s;
+	char *string;
 	unsigned int length;
-	struct node *next;
+	struct nodes *next;
 } list_t;
 
-int _putchar(char *c);
-size_t list_len(const list_t *h);
+
+int _putchar(char c);
+
 size_t print_list(const list_t *h);
-list_t *add_node(list_t **head, const char *s);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
 
 #endif
