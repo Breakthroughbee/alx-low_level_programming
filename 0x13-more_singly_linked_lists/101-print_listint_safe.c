@@ -13,7 +13,7 @@ size_t looped_listint_len(const listint_t *head)
 	const listint_t *tortoise, *rabbit;
 	size_t node = 1;
 
-	if (head == NULL || head->nect == NULL)
+	if (head == NULL || head->next == NULL)
 	{
 		return (0);
 	}
