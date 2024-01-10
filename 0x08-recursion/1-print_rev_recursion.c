@@ -13,7 +13,7 @@ void _print_rev_recursion(char *s)
 		return;
 	}
 
-	_print_rev_recursin(s + 1);
+	_print_rev_recursion(s + 1);
 
 	putchar(*s);
 }
