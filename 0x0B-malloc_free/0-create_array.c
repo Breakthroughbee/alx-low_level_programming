@@ -7,7 +7,7 @@
  * @size: unsigned int
  * @c: char
  *
- * Return: NULL
+ * Return: char
  */
 
 char *create_array(unsigned int size, char c)
@@ -19,10 +19,12 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	some_array = (char *)malloc(size * sizeof(char));
-
+	some_array = malloc(size * sizeof(char));
+	if (some_array == NULL)
+		return (NULL);
 	for (a = 0; a < size; a++)
+	{
 		some_array[a] = c;
-
+	}
 	return (some_array);
 }
