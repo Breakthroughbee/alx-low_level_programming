@@ -22,7 +22,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (x < 5)
 	{
-		if (!(strcmp(ops[x].op, s)))
+		if (*ops[x].op == *s)
 			return (ops[x].f);
 		x++;
 	}
